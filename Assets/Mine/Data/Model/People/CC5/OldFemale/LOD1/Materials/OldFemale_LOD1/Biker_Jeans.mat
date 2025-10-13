@@ -14,7 +14,6 @@ Material:
   m_ValidKeywords:
   - _ALPHATEST_ON
   - _METALLICSPECGLOSSMAP
-  - _NORMALMAP
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
