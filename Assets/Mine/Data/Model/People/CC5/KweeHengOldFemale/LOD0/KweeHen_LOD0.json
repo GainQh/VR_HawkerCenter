@@ -1,0 +1,3065 @@
+{
+    "KweeHen_LOD0": {
+        "Version": "1.10.1822.1",
+        "Scene": {
+            "Name": true,
+            "SupportShaderSelect": true
+        },
+        "Export Directory": "C:/Gan Quanhao/3D Models/Character/KweeHenOldFemale/KweeHenOldFemale_LOD0",
+        "Object": {
+            "KweeHen_LOD0": {
+                "Generation": "",
+                "Physics": {
+                    "Collision Shapes": {
+                        "RL_BoneRoot": {},
+                        "CC_Base_Hip": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 2.0,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -5.4575042724609379,
+                                    1.2408612966537476,
+                                    95.71595764160156
+                                ],
+                                "WorldRotationQ": [
+                                    0.8121471405029297,
+                                    0.07484856247901917,
+                                    -0.10689520090818405,
+                                    0.5686722993850708
+                                ],
+                                "WorldScale": [
+                                    1.0000001192092896,
+                                    1.0000004768371583,
+                                    1.0000004768371583
+                                ],
+                                "Radius": 8.692729949951172,
+                                "Capsule Length": 24.919788360595704
+                            },
+                            "Capsule(0)": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 2.0,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    5.4571661949157719,
+                                    1.2408584356307984,
+                                    95.7166519165039
+                                ],
+                                "WorldRotationQ": [
+                                    0.8121403455734253,
+                                    -0.0748848095536232,
+                                    0.10694646835327149,
+                                    0.5686675906181336
+                                ],
+                                "WorldScale": [
+                                    1.000000238418579,
+                                    1.0000004768371583,
+                                    1.0000004768371583
+                                ],
+                                "Radius": 8.692729949951172,
+                                "Capsule Length": 24.919788360595704
+                            }
+                        },
+                        "CC_Base_Pelvis": {},
+                        "CC_Base_L_Thigh": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    8.807059288024903,
+                                    1.8403207063674927,
+                                    65.19720458984375
+                                ],
+                                "WorldRotationQ": [
+                                    -0.017074083909392358,
+                                    0.7132339477539063,
+                                    -0.7004204392433167,
+                                    -0.020421361550688745
+                                ],
+                                "WorldScale": [
+                                    1.0000003576278687,
+                                    1.0000001192092896,
+                                    1.000000238418579
+                                ],
+                                "Radius": 8.129145622253418,
+                                "Capsule Length": 40.6805419921875
+                            }
+                        },
+                        "CC_Base_L_Calf": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    7.60387659072876,
+                                    4.759863376617432,
+                                    24.981151580810548
+                                ],
+                                "WorldRotationQ": [
+                                    -0.006736827082931995,
+                                    0.711637020111084,
+                                    -0.7024840712547302,
+                                    -0.006590348668396473
+                                ],
+                                "WorldScale": [
+                                    0.9999998807907105,
+                                    1.0,
+                                    1.0
+                                ],
+                                "Radius": 6.164681434631348,
+                                "Capsule Length": 35.07794952392578
+                            }
+                        },
+                        "CC_Base_L_Foot": {},
+                        "CC_Base_L_ToeBase": {},
+                        "CC_Base_R_Thigh": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -8.803899765014649,
+                                    1.8340784311294556,
+                                    65.19257354736328
+                                ],
+                                "WorldRotationQ": [
+                                    0.019996430724859239,
+                                    0.7132477760314941,
+                                    -0.7004061341285706,
+                                    0.017574572935700418
+                                ],
+                                "WorldScale": [
+                                    1.0000001192092896,
+                                    1.000000238418579,
+                                    0.9999998211860657
+                                ],
+                                "Radius": 8.093399047851563,
+                                "Capsule Length": 40.75371170043945
+                            }
+                        },
+                        "CC_Base_R_Calf": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -7.600296974182129,
+                                    4.735019207000732,
+                                    24.979705810546876
+                                ],
+                                "WorldRotationQ": [
+                                    0.0067351567558944229,
+                                    0.711652398109436,
+                                    -0.7024686336517334,
+                                    0.006588454358279705
+                                ],
+                                "WorldScale": [
+                                    1.0000001192092896,
+                                    1.0,
+                                    1.0000001192092896
+                                ],
+                                "Radius": 6.15408992767334,
+                                "Capsule Length": 35.09912109375
+                            }
+                        },
+                        "CC_Base_R_Foot": {},
+                        "CC_Base_R_ToeBase": {},
+                        "CC_Base_Waist": {},
+                        "CC_Base_Spine01": {
+                            "Capsule(1)": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Z",
+                                "Margin": 2.0,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -0.00045233170385472476,
+                                    0.8840422034263611,
+                                    117.31397247314453
+                                ],
+                                "WorldRotationQ": [
+                                    0.4407256543636322,
+                                    0.5529565215110779,
+                                    0.4407256543636322,
+                                    0.5529565215110779
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ],
+                                "Radius": 12.762819290161133,
+                                "Capsule Length": 6.175418853759766
+                            }
+                        },
+                        "CC_Base_Spine02": {},
+                        "CC_Base_NeckTwist01": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -0.00025098249898292124,
+                                    5.494565963745117,
+                                    140.95497131347657
+                                ],
+                                "WorldRotationQ": [
+                                    0.785561740398407,
+                                    -7.176031857625276e-8,
+                                    6.989453282812974e-8,
+                                    0.6187832355499268
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ],
+                                "Radius": 5.2611212730407719,
+                                "Capsule Length": 5.305227279663086
+                            },
+                            "Capsule(0)": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Z",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    0.0021111443638801576,
+                                    5.369485855102539,
+                                    128.2267608642578
+                                ],
+                                "WorldRotationQ": [
+                                    0.5554760694503784,
+                                    0.4375458061695099,
+                                    0.5554760694503784,
+                                    0.43754589557647707
+                                ],
+                                "WorldScale": [
+                                    0.9999999403953552,
+                                    1.0,
+                                    0.9999999403953552
+                                ],
+                                "Radius": 10.775398254394532,
+                                "Capsule Length": 7.844638824462891
+                            },
+                            "Capsule(1)": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -6.999242782592773,
+                                    0.3654288947582245,
+                                    124.41859436035156
+                                ],
+                                "WorldRotationQ": [
+                                    0.263068288564682,
+                                    0.6563496589660645,
+                                    0.263068288564682,
+                                    0.6563498973846436
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    1.0,
+                                    0.9999999403953552
+                                ],
+                                "Radius": 7.259904861450195,
+                                "Capsule Length": 13.249420166015625
+                            },
+                            "Capsule(2)": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    7.0007452964782719,
+                                    0.3658435046672821,
+                                    124.41850280761719
+                                ],
+                                "WorldRotationQ": [
+                                    0.263068288564682,
+                                    0.6563496589660645,
+                                    0.263068288564682,
+                                    0.6563498973846436
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    1.0,
+                                    0.9999999403953552
+                                ],
+                                "Radius": 7.259904861450195,
+                                "Capsule Length": 13.249420166015625
+                            }
+                        },
+                        "CC_Base_Head": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -0.00021644178195856512,
+                                    1.0696606636047364,
+                                    152.94764709472657
+                                ],
+                                "WorldRotationQ": [
+                                    0.7071062326431274,
+                                    -6.279680775378438e-8,
+                                    6.279680775378438e-8,
+                                    0.7071073055267334
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    1.0000001192092896,
+                                    1.0000001192092896
+                                ],
+                                "Radius": 7.260695457458496,
+                                "Capsule Length": 7.808666229248047
+                            }
+                        },
+                        "CC_Base_L_Clavicle": {},
+                        "CC_Base_L_Upperarm": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    24.76151466369629,
+                                    7.853675365447998,
+                                    132.75753784179688
+                                ],
+                                "WorldRotationQ": [
+                                    0.497793048620224,
+                                    0.5034176707267761,
+                                    -0.499196320772171,
+                                    0.499575674533844
+                                ],
+                                "WorldScale": [
+                                    0.9999997615814209,
+                                    1.0000001192092896,
+                                    1.0
+                                ],
+                                "Radius": 5.0454301834106449,
+                                "Capsule Length": 22.943689346313478
+                            }
+                        },
+                        "CC_Base_L_Forearm": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    51.65399932861328,
+                                    7.81575870513916,
+                                    133.7471923828125
+                                ],
+                                "WorldRotationQ": [
+                                    0.49471139907836916,
+                                    0.5064652562141419,
+                                    -0.49527043104171755,
+                                    0.5034489035606384
+                                ],
+                                "WorldScale": [
+                                    0.9999999403953552,
+                                    0.9999997019767761,
+                                    0.9999998211860657
+                                ],
+                                "Radius": 3.4949710369110109,
+                                "Capsule Length": 22.913393020629884
+                            }
+                        },
+                        "CC_Base_L_Hand": {
+                            "Capsule": {
+                                "Bone Active": false,
+                                "Bound Type": "Box",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    67.65955352783203,
+                                    6.24110746383667,
+                                    133.49578857421876
+                                ],
+                                "WorldRotationQ": [
+                                    -0.4896010756492615,
+                                    -0.5071486234664917,
+                                    0.5194815993309021,
+                                    -0.48293888568878176
+                                ],
+                                "WorldScale": [
+                                    0.9999999403953552,
+                                    0.9999998211860657,
+                                    0.9999998211860657
+                                ],
+                                "Extent": [
+                                    4.522912502288818,
+                                    9.572022438049317,
+                                    8.070650100708008
+                                ]
+                            }
+                        },
+                        "CC_Base_L_Pinky1": {},
+                        "CC_Base_L_Pinky2": {},
+                        "CC_Base_L_Pinky3": {},
+                        "CC_Base_L_Ring1": {},
+                        "CC_Base_L_Ring2": {},
+                        "CC_Base_L_Ring3": {},
+                        "CC_Base_L_Mid1": {},
+                        "CC_Base_L_Mid2": {},
+                        "CC_Base_L_Mid3": {},
+                        "CC_Base_L_Index1": {},
+                        "CC_Base_L_Index2": {},
+                        "CC_Base_L_Index3": {},
+                        "CC_Base_L_Thumb1": {},
+                        "CC_Base_L_Thumb2": {},
+                        "CC_Base_L_Thumb3": {},
+                        "CC_Base_R_Clavicle": {},
+                        "CC_Base_R_Upperarm": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -24.76896095275879,
+                                    7.853561878204346,
+                                    132.7578582763672
+                                ],
+                                "WorldRotationQ": [
+                                    -0.497793048620224,
+                                    0.5034176707267761,
+                                    -0.49919673800468447,
+                                    -0.499575138092041
+                                ],
+                                "WorldScale": [
+                                    0.9999997615814209,
+                                    0.9999998807907105,
+                                    0.9999998807907105
+                                ],
+                                "Radius": 5.045191287994385,
+                                "Capsule Length": 22.95779037475586
+                            }
+                        },
+                        "CC_Base_R_Forearm": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -51.65549850463867,
+                                    7.814680099487305,
+                                    134.04937744140626
+                                ],
+                                "WorldRotationQ": [
+                                    0.4947114884853363,
+                                    -0.5064652562141419,
+                                    0.4952702820301056,
+                                    0.503449022769928
+                                ],
+                                "WorldScale": [
+                                    0.9999999403953552,
+                                    0.9999999403953552,
+                                    0.9999998807907105
+                                ],
+                                "Radius": 3.492560386657715,
+                                "Capsule Length": 22.915071487426759
+                            }
+                        },
+                        "CC_Base_R_Hand": {
+                            "Capsule": {
+                                "Bone Active": false,
+                                "Bound Type": "Box",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -67.67904663085938,
+                                    6.507044315338135,
+                                    133.47149658203126
+                                ],
+                                "WorldRotationQ": [
+                                    0.4896010160446167,
+                                    -0.5071486234664917,
+                                    0.5194815993309021,
+                                    0.4829390048980713
+                                ],
+                                "WorldScale": [
+                                    1.0000001192092896,
+                                    1.0,
+                                    0.9999998807907105
+                                ],
+                                "Extent": [
+                                    5.314803123474121,
+                                    9.57332992553711,
+                                    8.195566177368164
+                                ]
+                            }
+                        },
+                        "CC_Base_R_Ring1": {},
+                        "CC_Base_R_Ring2": {},
+                        "CC_Base_R_Ring3": {},
+                        "CC_Base_R_Mid1": {},
+                        "CC_Base_R_Mid2": {},
+                        "CC_Base_R_Mid3": {},
+                        "CC_Base_R_Thumb1": {},
+                        "CC_Base_R_Thumb2": {},
+                        "CC_Base_R_Thumb3": {},
+                        "CC_Base_R_Index1": {},
+                        "CC_Base_R_Index2": {},
+                        "CC_Base_R_Index3": {},
+                        "CC_Base_R_Pinky1": {},
+                        "CC_Base_R_Pinky2": {},
+                        "CC_Base_R_Pinky3": {},
+                        "CC_Base_Body": {},
+                        "CC_Base_Eye": {},
+                        "Basic_T_shirts": {},
+                        "Sport_sneakers": {},
+                        "Slim_fit_pants": {},
+                        "Hair_Base": {
+                            "Box": {
+                                "Bone Active": false,
+                                "Bound Type": "Box",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "WorldRotationQ": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ],
+                                "Extent": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ]
+                            }
+                        },
+                        "Bun": {
+                            "Box": {
+                                "Bone Active": false,
+                                "Bound Type": "Box",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "WorldRotationQ": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ],
+                                "Extent": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ]
+                            }
+                        },
+                        "Real_Hair": {
+                            "Box": {
+                                "Bone Active": false,
+                                "Bound Type": "Box",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "WorldRotationQ": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ],
+                                "Extent": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ]
+                            }
+                        }
+                    }
+                },
+                "ExpressionSet": "3",
+                "Expression": {
+                    "Brow_Raise_Inner_L": {
+                        "Bones": {}
+                    },
+                    "Brow_Raise_Inner_R": {
+                        "Bones": {}
+                    },
+                    "Brow_Raise_Outer_L": {
+                        "Bones": {}
+                    },
+                    "Brow_Raise_Outer_R": {
+                        "Bones": {}
+                    },
+                    "Brow_Drop_L": {
+                        "Bones": {}
+                    },
+                    "Brow_Drop_R": {
+                        "Bones": {}
+                    },
+                    "Brow_Compress_L": {
+                        "Bones": {}
+                    },
+                    "Brow_Compress_R": {
+                        "Bones": {}
+                    },
+                    "Eye_Blink_L": {
+                        "Bones": {}
+                    },
+                    "Eye_Blink_R": {
+                        "Bones": {}
+                    },
+                    "Nose_Sneer_L": {
+                        "Bones": {}
+                    },
+                    "Nose_Sneer_R": {
+                        "Bones": {}
+                    },
+                    "Nose_Nostril_Raise_L": {
+                        "Bones": {}
+                    },
+                    "Nose_Nostril_Raise_R": {
+                        "Bones": {}
+                    },
+                    "Nose_Nostril_Dilate_L": {
+                        "Bones": {}
+                    },
+                    "Nose_Nostril_Dilate_R": {
+                        "Bones": {}
+                    },
+                    "Nose_Crease_L": {
+                        "Bones": {}
+                    },
+                    "Nose_Crease_R": {
+                        "Bones": {}
+                    },
+                    "Nose_Nostril_Down_L": {
+                        "Bones": {}
+                    },
+                    "Nose_Nostril_Down_R": {
+                        "Bones": {}
+                    },
+                    "Nose_Nostril_In_L": {
+                        "Bones": {}
+                    },
+                    "Nose_Nostril_In_R": {
+                        "Bones": {}
+                    },
+                    "Nose_Tip_L": {
+                        "Bones": {}
+                    },
+                    "Nose_Tip_R": {
+                        "Bones": {}
+                    },
+                    "Nose_Tip_Up": {
+                        "Bones": {}
+                    },
+                    "Nose_Tip_Down": {
+                        "Bones": {}
+                    },
+                    "Cheek_Raise_L": {
+                        "Bones": {}
+                    },
+                    "Cheek_Raise_R": {
+                        "Bones": {}
+                    },
+                    "Cheek_Suck_L": {
+                        "Bones": {}
+                    },
+                    "Cheek_Suck_R": {
+                        "Bones": {}
+                    },
+                    "Cheek_Puff_L": {
+                        "Bones": {}
+                    },
+                    "Cheek_Puff_R": {
+                        "Bones": {}
+                    },
+                    "Neck_Swallow_Up": {
+                        "Bones": {}
+                    },
+                    "Neck_Swallow_Down": {
+                        "Bones": {}
+                    },
+                    "Neck_Tighten_L": {
+                        "Bones": {}
+                    },
+                    "Neck_Tighten_R": {
+                        "Bones": {}
+                    },
+                    "Head_Turn_Up": {
+                        "Bones": {
+                            "CC_Base_Head": {
+                                "Translate": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Rotation": [
+                                    -0.25881868600845339,
+                                    -8.881745551123034e-16,
+                                    -4.218829282367229e-15,
+                                    0.9659258127212524
+                                ]
+                            }
+                        }
+                    },
+                    "Head_Turn_Down": {
+                        "Bones": {
+                            "CC_Base_Head": {
+                                "Translate": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Rotation": [
+                                    0.15643465518951417,
+                                    0.0,
+                                    -1.4016506393586294e-15,
+                                    0.9876882433891296
+                                ]
+                            }
+                        }
+                    },
+                    "Head_Turn_L": {
+                        "Bones": {
+                            "CC_Base_Head": {
+                                "Translate": [
+                                    1.6799989938735963,
+                                    -0.0017466545104980469,
+                                    0.0005846022977493703
+                                ],
+                                "Rotation": [
+                                    -0.0015400404809042812,
+                                    0.4305083453655243,
+                                    -0.003229100489988923,
+                                    0.9025793671607971
+                                ]
+                            }
+                        }
+                    },
+                    "Head_Turn_R": {
+                        "Bones": {
+                            "CC_Base_Head": {
+                                "Translate": [
+                                    -1.68000066280365,
+                                    -0.0017480850219726563,
+                                    0.0005848407163284719
+                                ],
+                                "Rotation": [
+                                    -0.0015399446710944176,
+                                    -0.43050819635391238,
+                                    0.0032293915282934906,
+                                    0.9025794267654419
+                                ]
+                            }
+                        }
+                    },
+                    "Head_Tilt_L": {
+                        "Bones": {
+                            "CC_Base_Head": {
+                                "Translate": [
+                                    0.6400004625320435,
+                                    -0.000023126602172851564,
+                                    0.00012278555368538946
+                                ],
+                                "Rotation": [
+                                    3.576277265437966e-7,
+                                    4.656611096720553e-8,
+                                    -0.20278725028038026,
+                                    0.9792227149009705
+                                ]
+                            }
+                        }
+                    },
+                    "Head_Tilt_R": {
+                        "Bones": {
+                            "CC_Base_Head": {
+                                "Translate": [
+                                    -0.639999508857727,
+                                    -0.000023126602172851564,
+                                    0.00012278555368538946
+                                ],
+                                "Rotation": [
+                                    3.2037490882430577e-7,
+                                    -6.519256601222878e-8,
+                                    0.20278729498386384,
+                                    0.9792227149009705
+                                ]
+                            }
+                        }
+                    },
+                    "Head_L": {
+                        "Bones": {
+                            "CC_Base_Head": {
+                                "Translate": [
+                                    2.000000238418579,
+                                    -0.008277416229248047,
+                                    0.00007152556645451114
+                                ],
+                                "Rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ]
+                            }
+                        }
+                    },
+                    "Head_R": {
+                        "Bones": {
+                            "CC_Base_Head": {
+                                "Translate": [
+                                    -2.0000007152557375,
+                                    0.00011348724365234375,
+                                    0.00011575221287785098
+                                ],
+                                "Rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ]
+                            }
+                        }
+                    },
+                    "Head_Forward": {
+                        "Bones": {
+                            "CC_Base_Head": {
+                                "Translate": [
+                                    3.762618803193618e-7,
+                                    0.5761525630950928,
+                                    2.8959648609161379
+                                ],
+                                "Rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ]
+                            }
+                        }
+                    },
+                    "Head_Backward": {
+                        "Bones": {
+                            "CC_Base_Head": {
+                                "Translate": [
+                                    6.016840075062646e-7,
+                                    -0.5006346702575684,
+                                    -2.546692132949829
+                                ],
+                                "Rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ]
+                            }
+                        }
+                    },
+                    "Jaw_Open": {
+                        "Bones": {}
+                    },
+                    "Jaw_Forward": {
+                        "Bones": {}
+                    },
+                    "Jaw_Backward": {
+                        "Bones": {}
+                    },
+                    "Jaw_L": {
+                        "Bones": {}
+                    },
+                    "Jaw_R": {
+                        "Bones": {}
+                    },
+                    "Jaw_Up": {
+                        "Bones": {}
+                    },
+                    "Jaw_Down": {
+                        "Bones": {}
+                    },
+                    "Eyelash_Upper_Up_L": {
+                        "Bones": {}
+                    },
+                    "Eyelash_Upper_Down_L": {
+                        "Bones": {}
+                    },
+                    "Eyelash_Upper_Up_R": {
+                        "Bones": {}
+                    },
+                    "Eyelash_Upper_Down_R": {
+                        "Bones": {}
+                    },
+                    "Eyelash_Lower_Up_L": {
+                        "Bones": {}
+                    },
+                    "Eyelash_Lower_Down_L": {
+                        "Bones": {}
+                    },
+                    "Eyelash_Lower_Up_R": {
+                        "Bones": {}
+                    },
+                    "Eyelash_Lower_Down_R": {
+                        "Bones": {}
+                    },
+                    "Tongue_Out": {
+                        "Bones": {}
+                    },
+                    "Tongue_In": {
+                        "Bones": {}
+                    },
+                    "Tongue_Up": {
+                        "Bones": {}
+                    },
+                    "Tongue_Down": {
+                        "Bones": {}
+                    },
+                    "Tongue_Mid_Up": {
+                        "Bones": {}
+                    },
+                    "Tongue_Tip_Up": {
+                        "Bones": {}
+                    },
+                    "Tongue_Tip_Down": {
+                        "Bones": {}
+                    },
+                    "Tongue_Narrow": {
+                        "Bones": {}
+                    },
+                    "Tongue_Wide": {
+                        "Bones": {}
+                    },
+                    "Tongue_Roll": {
+                        "Bones": {}
+                    },
+                    "Tongue_L": {
+                        "Bones": {}
+                    },
+                    "Tongue_R": {
+                        "Bones": {}
+                    },
+                    "Tongue_Tip_L": {
+                        "Bones": {}
+                    },
+                    "Tongue_Tip_R": {
+                        "Bones": {}
+                    },
+                    "Tongue_Twist_L": {
+                        "Bones": {}
+                    },
+                    "Tongue_Twist_R": {
+                        "Bones": {}
+                    },
+                    "Tongue_Bulge_L": {
+                        "Bones": {}
+                    },
+                    "Tongue_Bulge_R": {
+                        "Bones": {}
+                    },
+                    "Tongue_Extend": {
+                        "Bones": {}
+                    },
+                    "Tongue_Enlarge": {
+                        "Bones": {}
+                    },
+                    "Eye_Squint_L": {
+                        "Bones": {}
+                    },
+                    "Eye_Squint_R": {
+                        "Bones": {}
+                    },
+                    "Eye_Wide_L": {
+                        "Bones": {}
+                    },
+                    "Eye_Wide_R": {
+                        "Bones": {}
+                    },
+                    "Eye_L_Look_L": {
+                        "Bones": {}
+                    },
+                    "Eye_R_Look_L": {
+                        "Bones": {}
+                    },
+                    "Eye_L_Look_R": {
+                        "Bones": {}
+                    },
+                    "Eye_R_Look_R": {
+                        "Bones": {}
+                    },
+                    "Eye_L_Look_Up": {
+                        "Bones": {}
+                    },
+                    "Eye_R_Look_Up": {
+                        "Bones": {}
+                    },
+                    "Eye_L_Look_Down": {
+                        "Bones": {}
+                    },
+                    "Eye_R_Look_Down": {
+                        "Bones": {}
+                    },
+                    "Eye_Pupil_Dilate": {
+                        "Bones": {}
+                    },
+                    "Eye_Pupil_Contract": {
+                        "Bones": {}
+                    },
+                    "Ear_Up_L": {
+                        "Bones": {}
+                    },
+                    "Ear_Up_R": {
+                        "Bones": {}
+                    },
+                    "Ear_Down_L": {
+                        "Bones": {}
+                    },
+                    "Ear_Down_R": {
+                        "Bones": {}
+                    },
+                    "Ear_Out_L": {
+                        "Bones": {}
+                    },
+                    "Ear_Out_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Smile_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Smile_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Smile_Sharp_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Smile_Sharp_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Frown_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Frown_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Stretch_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Stretch_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Dimple_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Dimple_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Press_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Press_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Tighten_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Tighten_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Blow_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Blow_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Pucker_Up_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Pucker_Up_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Pucker_Down_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Pucker_Down_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Funnel_Up_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Funnel_Up_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Funnel_Down_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Funnel_Down_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Roll_In_Upper_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Roll_In_Upper_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Roll_In_Lower_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Roll_In_Lower_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Roll_Out_Upper_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Roll_Out_Upper_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Roll_Out_Lower_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Roll_Out_Lower_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Push_Upper_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Push_Upper_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Push_Lower_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Push_Lower_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Pull_Upper_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Pull_Upper_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Pull_Lower_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Pull_Lower_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Up": {
+                        "Bones": {}
+                    },
+                    "Mouth_Down": {
+                        "Bones": {}
+                    },
+                    "Mouth_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Upper_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Upper_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Lower_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Lower_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Shrug_Upper": {
+                        "Bones": {}
+                    },
+                    "Mouth_Shrug_Lower": {
+                        "Bones": {}
+                    },
+                    "Mouth_Drop_Upper": {
+                        "Bones": {}
+                    },
+                    "Mouth_Drop_Lower": {
+                        "Bones": {}
+                    },
+                    "Mouth_Up_Upper_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Up_Upper_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Down_Lower_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Down_Lower_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Chin_Up": {
+                        "Bones": {}
+                    },
+                    "Mouth_Close": {
+                        "Bones": {}
+                    },
+                    "Mouth_Contract": {
+                        "Bones": {}
+                    }
+                },
+                "Constraint": {},
+                "Meshes": {
+                    "CC_Base_Body": {
+                        "SubD Level": 0,
+                        "Materials": {
+                            "Std_Skin_Head": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    125.00000762939453,
+                                    125.00000762939453,
+                                    125.00000762939453
+                                ],
+                                "Specular Color": [
+                                    68.6969985961914,
+                                    68.6969985961914,
+                                    68.6969985961914
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Std_Skin_Head_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Std_Skin_Head_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Head/Std_Skin_Head_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Head/Std_Skin_Head_MetallicAlpha.png"
+                                    }
+                                },
+                                "Resource Textures": {},
+                                "Custom Shader": {
+                                    "Shader Name": "RLSSS",
+                                    "Image": {
+                                        "Transmission Map": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Head/Std_Skin_Head_MetallicAlpha.png_TransMap.png"
+                                        },
+                                        "RGBA Area Mask": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Head/Std_Skin_Head_MetallicAlpha.png_RGBAMask.tga"
+                                        },
+                                        "SSS Map": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Head/Std_Skin_Head_MetallicAlpha.png_SSSMap.jpg"
+                                        },
+                                        "MicroNormal": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Nails/Std_Nails_MetallicAlpha.png_MicroN.png"
+                                        },
+                                        "MicroNormalMask": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Head/Std_Skin_Head_MetallicAlpha.png_MicroNMask.jpg"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "_BaseColorMap Brightness": 0.0,
+                                        "_BaseColorMap Saturation": 0.0,
+                                        "AO Map Affect All Lights": 0.0,
+                                        "Flip MicroNormal Y": 1.0,
+                                        "MicroNormal Tiling": 20.0,
+                                        "MicroNormal Strength": 0.800000011920929,
+                                        "_Specular": 0.4000000059604645,
+                                        "Micro Roughness Scale": 0.16599999368190766,
+                                        "R Channel Roughness Scale": 0.0,
+                                        "G Channel Roughness Scale": 0.0,
+                                        "B Channel Roughness Scale": 0.0,
+                                        "A Channel Roughness Scale": 0.0,
+                                        "Unmasked Roughness Scale": -0.10999999940395355,
+                                        "Edge Roughness Multiplier": 0.04399999976158142,
+                                        "R Channel Scatter Scale": 1.0,
+                                        "G Channel Scatter Scale": 1.0,
+                                        "B Channel Scatter Scale": 1.0,
+                                        "A Channel Scatter Scale": 1.0,
+                                        "Unmasked Scatter Scale": 1.0
+                                    }
+                                },
+                                "Subsurface Scatter": {
+                                    "Falloff": [
+                                        255.0,
+                                        94.3499984741211,
+                                        76.5
+                                    ],
+                                    "Radius": 1.5,
+                                    "Distribution": 0.4000000059604645,
+                                    "IOR": 3.0,
+                                    "DecayScale": 0.15000000596046449,
+                                    "Lerp": 0.8500000238418579
+                                }
+                            },
+                            "Std_Skin_Body": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    125.00000762939453,
+                                    125.00000762939453,
+                                    125.00000762939453
+                                ],
+                                "Specular Color": [
+                                    68.6969985961914,
+                                    68.6969985961914,
+                                    68.6969985961914
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Std_Skin_Body_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Std_Skin_Body_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Body/Std_Skin_Body_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Body/Std_Skin_Body_MetallicAlpha.png"
+                                    }
+                                },
+                                "Resource Textures": {},
+                                "Custom Shader": {
+                                    "Shader Name": "RLSSS",
+                                    "Image": {
+                                        "Transmission Map": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Body/Std_Skin_Body_MetallicAlpha.png_TransMap.png"
+                                        },
+                                        "RGBA Area Mask": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Body/Std_Skin_Body_MetallicAlpha.png_RGBAMask.tga"
+                                        },
+                                        "SSS Map": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Body/Std_Skin_Body_MetallicAlpha.png_SSSMap.png"
+                                        },
+                                        "MicroNormal": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Nails/Std_Nails_MetallicAlpha.png_MicroN.png"
+                                        },
+                                        "MicroNormalMask": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Body/Std_Skin_Body_MetallicAlpha.png_MicroNMask.jpg"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "_BaseColorMap Brightness": 0.0,
+                                        "_BaseColorMap Saturation": 0.0,
+                                        "AO Map Affect All Lights": 0.0,
+                                        "Flip MicroNormal Y": 1.0,
+                                        "MicroNormal Tiling": 42.0,
+                                        "MicroNormal Strength": 1.0,
+                                        "_Specular": 0.4000000059604645,
+                                        "Micro Roughness Scale": -0.05000000074505806,
+                                        "R Channel Roughness Scale": 0.0,
+                                        "G Channel Roughness Scale": 0.0,
+                                        "B Channel Roughness Scale": 0.0,
+                                        "A Channel Roughness Scale": 0.0,
+                                        "Unmasked Roughness Scale": 0.0,
+                                        "Edge Roughness Multiplier": 0.10000000149011612,
+                                        "R Channel Scatter Scale": 1.0,
+                                        "G Channel Scatter Scale": 1.0,
+                                        "B Channel Scatter Scale": 1.0,
+                                        "A Channel Scatter Scale": 1.0,
+                                        "Unmasked Scatter Scale": 1.0
+                                    }
+                                },
+                                "Subsurface Scatter": {
+                                    "Falloff": [
+                                        255.0,
+                                        94.3499984741211,
+                                        76.5
+                                    ],
+                                    "Radius": 1.5,
+                                    "Distribution": 0.4000000059604645,
+                                    "IOR": 3.0,
+                                    "DecayScale": 0.15000000596046449,
+                                    "Lerp": 0.8500000238418579
+                                }
+                            },
+                            "Std_Skin_Arm": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    125.00000762939453,
+                                    125.00000762939453,
+                                    125.00000762939453
+                                ],
+                                "Specular Color": [
+                                    68.6969985961914,
+                                    68.6969985961914,
+                                    68.6969985961914
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Std_Skin_Arm_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Std_Skin_Arm_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Arm/Std_Skin_Arm_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Arm/Std_Skin_Arm_MetallicAlpha.png"
+                                    }
+                                },
+                                "Resource Textures": {},
+                                "Custom Shader": {
+                                    "Shader Name": "RLSSS",
+                                    "Image": {
+                                        "Transmission Map": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Arm/Std_Skin_Arm_MetallicAlpha.png_TransMap.png"
+                                        },
+                                        "RGBA Area Mask": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Arm/Std_Skin_Arm_MetallicAlpha.png_RGBAMask.tga"
+                                        },
+                                        "SSS Map": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Arm/Std_Skin_Arm_MetallicAlpha.png_SSSMap.png"
+                                        },
+                                        "MicroNormal": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Nails/Std_Nails_MetallicAlpha.png_MicroN.png"
+                                        },
+                                        "MicroNormalMask": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Arm/Std_Skin_Arm_MetallicAlpha.png_MicroNMask.jpg"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "_BaseColorMap Brightness": 0.0,
+                                        "_BaseColorMap Saturation": 0.0,
+                                        "AO Map Affect All Lights": 0.0,
+                                        "Flip MicroNormal Y": 1.0,
+                                        "MicroNormal Tiling": 42.0,
+                                        "MicroNormal Strength": 1.0,
+                                        "_Specular": 0.4000000059604645,
+                                        "Micro Roughness Scale": -0.05000000074505806,
+                                        "R Channel Roughness Scale": 0.0,
+                                        "G Channel Roughness Scale": 0.0,
+                                        "B Channel Roughness Scale": 0.0,
+                                        "A Channel Roughness Scale": 0.0,
+                                        "Unmasked Roughness Scale": 0.0,
+                                        "Edge Roughness Multiplier": 0.10000000149011612,
+                                        "R Channel Scatter Scale": 1.0,
+                                        "G Channel Scatter Scale": 1.0,
+                                        "B Channel Scatter Scale": 1.0,
+                                        "A Channel Scatter Scale": 1.0,
+                                        "Unmasked Scatter Scale": 1.0
+                                    }
+                                },
+                                "Subsurface Scatter": {
+                                    "Falloff": [
+                                        255.0,
+                                        94.3499984741211,
+                                        76.5
+                                    ],
+                                    "Radius": 1.5,
+                                    "Distribution": 0.4000000059604645,
+                                    "IOR": 3.0,
+                                    "DecayScale": 0.15000000596046449,
+                                    "Lerp": 0.8500000238418579
+                                }
+                            },
+                            "Std_Skin_Leg": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    125.00000762939453,
+                                    125.00000762939453,
+                                    125.00000762939453
+                                ],
+                                "Specular Color": [
+                                    68.6969985961914,
+                                    68.6969985961914,
+                                    68.6969985961914
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Std_Skin_Leg_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Std_Skin_Leg_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Leg/Std_Skin_Leg_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Leg/Std_Skin_Leg_MetallicAlpha.png"
+                                    }
+                                },
+                                "Resource Textures": {},
+                                "Custom Shader": {
+                                    "Shader Name": "RLSSS",
+                                    "Image": {
+                                        "Transmission Map": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Leg/Std_Skin_Leg_MetallicAlpha.png_TransMap.png"
+                                        },
+                                        "RGBA Area Mask": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Leg/Std_Skin_Leg_MetallicAlpha.png_RGBAMask.tga"
+                                        },
+                                        "SSS Map": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Leg/Std_Skin_Leg_MetallicAlpha.png_SSSMap.png"
+                                        },
+                                        "MicroNormal": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Nails/Std_Nails_MetallicAlpha.png_MicroN.png"
+                                        },
+                                        "MicroNormalMask": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Skin_Leg/Std_Skin_Leg_MetallicAlpha.png_MicroNMask.jpg"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "_BaseColorMap Brightness": 0.0,
+                                        "_BaseColorMap Saturation": 0.0,
+                                        "AO Map Affect All Lights": 0.0,
+                                        "Flip MicroNormal Y": 1.0,
+                                        "MicroNormal Tiling": 42.0,
+                                        "MicroNormal Strength": 1.0,
+                                        "_Specular": 0.4000000059604645,
+                                        "Micro Roughness Scale": -0.05000000074505806,
+                                        "R Channel Roughness Scale": 0.0,
+                                        "G Channel Roughness Scale": 0.0,
+                                        "B Channel Roughness Scale": 0.0,
+                                        "A Channel Roughness Scale": 0.0,
+                                        "Unmasked Roughness Scale": 0.0,
+                                        "Edge Roughness Multiplier": 0.10000000149011612,
+                                        "R Channel Scatter Scale": 1.0,
+                                        "G Channel Scatter Scale": 1.0,
+                                        "B Channel Scatter Scale": 1.0,
+                                        "A Channel Scatter Scale": 1.0,
+                                        "Unmasked Scatter Scale": 1.0
+                                    }
+                                },
+                                "Subsurface Scatter": {
+                                    "Falloff": [
+                                        255.0,
+                                        94.3499984741211,
+                                        76.5
+                                    ],
+                                    "Radius": 1.5,
+                                    "Distribution": 0.4000000059604645,
+                                    "IOR": 3.0,
+                                    "DecayScale": 0.15000000596046449,
+                                    "Lerp": 0.8500000238418579
+                                }
+                            },
+                            "Std_Nails": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    125.00000762939453,
+                                    125.00000762939453,
+                                    125.00000762939453
+                                ],
+                                "Specular Color": [
+                                    68.6969985961914,
+                                    68.6969985961914,
+                                    68.6969985961914
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Std_Nails_Diffuse.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Std_Nails_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Nails/Std_Nails_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Nails/Std_Nails_MetallicAlpha.png"
+                                    }
+                                },
+                                "Resource Textures": {},
+                                "Custom Shader": {
+                                    "Shader Name": "RLSSS",
+                                    "Image": {
+                                        "Transmission Map": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Nails/Std_Nails_MetallicAlpha.png_TransMap.png"
+                                        },
+                                        "RGBA Area Mask": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Nails/Std_Nails_MetallicAlpha.png_RGBAMask.tga"
+                                        },
+                                        "SSS Map": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Nails/Std_Nails_MetallicAlpha.png_SSSMap.jpg"
+                                        },
+                                        "MicroNormal": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Nails/Std_Nails_MetallicAlpha.png_MicroN.png"
+                                        },
+                                        "MicroNormalMask": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Nails/Std_Nails_MetallicAlpha.png_MicroNMask.jpg"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "_BaseColorMap Brightness": 0.0,
+                                        "_BaseColorMap Saturation": 0.0,
+                                        "AO Map Affect All Lights": 0.0,
+                                        "Flip MicroNormal Y": 1.0,
+                                        "MicroNormal Tiling": 42.0,
+                                        "MicroNormal Strength": 1.0,
+                                        "_Specular": 0.4000000059604645,
+                                        "Micro Roughness Scale": -0.05000000074505806,
+                                        "R Channel Roughness Scale": 0.0,
+                                        "G Channel Roughness Scale": 0.0,
+                                        "B Channel Roughness Scale": 0.0,
+                                        "A Channel Roughness Scale": 0.0,
+                                        "Unmasked Roughness Scale": 0.0,
+                                        "Edge Roughness Multiplier": 0.10000000149011612,
+                                        "R Channel Scatter Scale": 1.0,
+                                        "G Channel Scatter Scale": 1.0,
+                                        "B Channel Scatter Scale": 1.0,
+                                        "A Channel Scatter Scale": 1.0,
+                                        "Unmasked Scatter Scale": 1.0
+                                    }
+                                },
+                                "Subsurface Scatter": {
+                                    "Falloff": [
+                                        255.0,
+                                        94.3499984741211,
+                                        76.5
+                                    ],
+                                    "Radius": 1.5,
+                                    "Distribution": 0.4000000059604645,
+                                    "IOR": 3.0,
+                                    "DecayScale": 0.15000000596046449,
+                                    "Lerp": 0.8500000238418579
+                                }
+                            },
+                            "Std_Eyelash": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    125.00000762939453,
+                                    125.00000762939453,
+                                    125.00000762939453
+                                ],
+                                "Specular Color": [
+                                    229.5,
+                                    229.5,
+                                    229.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Std_Eyelash_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Std_Eyelash_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Std_Eyelash_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Eyelash/Std_Eyelash_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Body/Std_Eyelash/Std_Eyelash_MetallicAlpha.png"
+                                    }
+                                },
+                                "Resource Textures": {}
+                            }
+                        }
+                    },
+                    "CC_Base_Eye": {
+                        "SubD Level": 0,
+                        "Materials": {
+                            "Std_Eye_R": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": false,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    50.000003814697269,
+                                    50.000003814697269,
+                                    50.000003814697269
+                                ],
+                                "Specular Color": [
+                                    229.00001525878907,
+                                    229.00001525878907,
+                                    229.00001525878907
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Std_Eye_R_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Std_Eye_R_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Eye/Std_Eye_R/Std_Eye_R_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Eye/Std_Eye_R/Std_Eye_R_MetallicAlpha.png"
+                                    }
+                                },
+                                "Resource Textures": {}
+                            },
+                            "Std_Cornea_R": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": false,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    50.000003814697269,
+                                    50.000003814697269,
+                                    50.000003814697269
+                                ],
+                                "Specular Color": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Opacity": 0.800000011920929,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Std_Cornea_R_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Std_Cornea_R_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Eye/Std_Cornea_R/Std_Cornea_R_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Eye/Std_Cornea_R/Std_Cornea_R_MetallicAlpha.png"
+                                    }
+                                },
+                                "Resource Textures": {}
+                            },
+                            "Std_Eye_L": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": false,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    50.000003814697269,
+                                    50.000003814697269,
+                                    50.000003814697269
+                                ],
+                                "Specular Color": [
+                                    229.00001525878907,
+                                    229.00001525878907,
+                                    229.00001525878907
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Std_Eye_L_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Std_Eye_L_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Eye/Std_Eye_L/Std_Eye_L_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Eye/Std_Eye_L/Std_Eye_L_MetallicAlpha.png"
+                                    }
+                                },
+                                "Resource Textures": {}
+                            },
+                            "Std_Cornea_L": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": false,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    50.000003814697269,
+                                    50.000003814697269,
+                                    50.000003814697269
+                                ],
+                                "Specular Color": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Opacity": 0.800000011920929,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Std_Cornea_L_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Std_Cornea_L_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Eye/Std_Cornea_L/Std_Cornea_L_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/CC_Base_Eye/Std_Cornea_L/Std_Cornea_L_MetallicAlpha.png"
+                                    }
+                                },
+                                "Resource Textures": {}
+                            }
+                        }
+                    },
+                    "Basic_T_shirts": {
+                        "SubD Level": 0,
+                        "Materials": {
+                            "Basic_T_shirts": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    205.00001525878907,
+                                    205.00001525878907,
+                                    205.00001525878907
+                                ],
+                                "Ambient Color": [
+                                    150.0,
+                                    150.0,
+                                    150.0
+                                ],
+                                "Specular Color": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Basic_T_shirts_Diffuse.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Basic_T_shirts_Normal.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/Basic_T_shirts/Basic_T_shirts/Basic_T_shirts_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/Basic_T_shirts/Basic_T_shirts/Basic_T_shirts_MetallicAlpha.png"
+                                    }
+                                },
+                                "Resource Textures": {}
+                            }
+                        }
+                    },
+                    "Sport_sneakers": {
+                        "SubD Level": 0,
+                        "Materials": {
+                            "Sport_sneakers": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Specular Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Sport_sneakers_Diffuse.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Sport_sneakers_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/Sport_sneakers/Sport_sneakers/Sport_sneakers_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/Sport_sneakers/Sport_sneakers/Sport_sneakers_MetallicAlpha.png"
+                                    }
+                                },
+                                "Resource Textures": {}
+                            }
+                        }
+                    },
+                    "Slim_fit_pants": {
+                        "SubD Level": 0,
+                        "Materials": {
+                            "Slim_fit_pants": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Ambient Color": [
+                                    150.0,
+                                    150.0,
+                                    150.0
+                                ],
+                                "Specular Color": [
+                                    229.5,
+                                    229.5,
+                                    229.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Slim_fit_pants_Diffuse.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Slim_fit_pants_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/Slim_fit_pants/Slim_fit_pants/Slim_fit_pants_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/KweeHen_LOD0/Slim_fit_pants/Slim_fit_pants/Slim_fit_pants_MetallicAlpha.png"
+                                    }
+                                },
+                                "Resource Textures": {}
+                            }
+                        }
+                    },
+                    "Hair_Base": {
+                        "SubD Level": 0,
+                        "Materials": {
+                            "Hair": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    29.000001907348634,
+                                    29.000001907348634,
+                                    29.000001907348634
+                                ],
+                                "Ambient Color": [
+                                    149.99099731445313,
+                                    149.99099731445313,
+                                    149.99099731445313
+                                ],
+                                "Specular Color": [
+                                    229.5,
+                                    229.5,
+                                    229.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Hair_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Specular": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Hair_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/Hair_Base/Hair_Base/Hair/Hair_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/Hair_Base/Hair_Base/Hair/Hair_MetallicAlpha.png"
+                                    }
+                                },
+                                "Resource Textures": {},
+                                "Custom Shader": {
+                                    "Shader Name": "RLHair",
+                                    "Image": {
+                                        "Hair Root Map": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/Hair_Base/Hair_Base/Hair/Hair_MetallicAlpha.png_Hair Root Map.jpg"
+                                        },
+                                        "Hair ID Map": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/Hair_Base/Hair_Base/Hair/Hair_MetallicAlpha.png_Hair ID Map.png"
+                                        },
+                                        "Hair Flow Map": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/Hair_Base/Hair_Base/Hair/Hair_MetallicAlpha.png_Hair Flow Map.png"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "TangentVectorColor": [
+                                            255.0,
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "TangentMapFlipGreen": 1.0,
+                                        "AO Map Occlude All Lighting": 0.0,
+                                        "Diffuse Strength": 1.0,
+                                        "Hair Roughness Map Strength": 0.5239999890327454,
+                                        "Hair Specular Map Strength": 0.30000001192092898,
+                                        "Specular Strength": 0.800000011920929,
+                                        "Secondary Specular Strength": 1.0,
+                                        "Transmission Strength": 0.15000000596046449,
+                                        "No Back Face Triangles": 1.0,
+                                        "VertexGrayToColor": [
+                                            0.0,
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "VertexColorStrength": 0.875,
+                                        "ActiveChangeHairColor": 0.0,
+                                        "BaseColorMapStrength": 1.0,
+                                        "padding c4z": 0.0,
+                                        "paddingHasMips": 0.0,
+                                        "RootColor": [
+                                            37.0,
+                                            18.0,
+                                            11.0
+                                        ],
+                                        "padding c5w": 0.0,
+                                        "TipColor": [
+                                            86.0,
+                                            48.0,
+                                            31.0
+                                        ],
+                                        "RootTipBlendMode": 0.0,
+                                        "UseRootTipColor": 1.0,
+                                        "RootColorStrength": 1.0,
+                                        "TipColorStrength": 1.0,
+                                        "InvertRootTip": 0.0,
+                                        "_1st Dye Color": [
+                                            182.0,
+                                            125.0,
+                                            79.0
+                                        ],
+                                        "_1st Dye Strength": 0.5429999828338623,
+                                        "_1st Dye Distribution from Grayscale": [
+                                            25.5,
+                                            51.0,
+                                            76.5
+                                        ],
+                                        "_1st BlendMode": 0.0,
+                                        "Mask 1st Dye by RootMap": 1.0,
+                                        "Invert 1st Dye RootMap Mask": 1.0,
+                                        "_1st Dye add Specular": 0.0,
+                                        "padding c10w": 0.0,
+                                        "_2nd Dye Color": [
+                                            255.0,
+                                            255.0,
+                                            255.0
+                                        ],
+                                        "_2nd Dye Strength": 0.0,
+                                        "_2nd Dye Distribution from Grayscale": [
+                                            25.5,
+                                            51.0,
+                                            76.5
+                                        ],
+                                        "_2nd BlendMode": 0.0,
+                                        "Mask 2nd Dye by RootMap": 0.0,
+                                        "Invert 2nd Dye RootMap Mask": 0.0,
+                                        "_2nd Dye add Specular": 0.0,
+                                        "padding c13w": 0.0,
+                                        "BlackColor Reflection Offset X": 0.0,
+                                        "BlackColor Reflection Offset Y": 0.0,
+                                        "BlackColor Reflection Offset Z": 0.0,
+                                        "padding c14w": 0.0,
+                                        "WhiteColor Reflection Offset X": 0.0,
+                                        "WhiteColor Reflection Offset Y": 0.0,
+                                        "WhiteColor Reflection Offset Z": 0.0,
+                                        "padding c15w": 0.0
+                                    }
+                                }
+                            },
+                            "Scalp": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    125.00000762939453,
+                                    125.00000762939453,
+                                    125.00000762939453
+                                ],
+                                "Specular Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Scalp_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Scalp_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/Hair_Base/Hair_Base/Scalp/Scalp_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/Hair_Base/Hair_Base/Scalp/Scalp_MetallicAlpha.png"
+                                    }
+                                },
+                                "Resource Textures": {}
+                            }
+                        }
+                    },
+                    "Bun": {
+                        "SubD Level": 0,
+                        "Materials": {
+                            "Hair_0": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    48.000003814697269,
+                                    48.000003814697269,
+                                    48.000003814697269
+                                ],
+                                "Ambient Color": [
+                                    149.99099731445313,
+                                    149.99099731445313,
+                                    149.99099731445313
+                                ],
+                                "Specular Color": [
+                                    229.5,
+                                    229.5,
+                                    229.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Hair_0_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Specular": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Hair_0_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/Bun/Bun/Hair_0/Hair_0_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/Bun/Bun/Hair_0/Hair_0_MetallicAlpha.png"
+                                    }
+                                },
+                                "Resource Textures": {},
+                                "Custom Shader": {
+                                    "Shader Name": "RLHair",
+                                    "Image": {
+                                        "Hair Root Map": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/Bun/Bun/Hair_0/Hair_0_MetallicAlpha.png_Hair Root Map.jpg"
+                                        },
+                                        "Hair ID Map": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/Bun/Bun/Hair_0/Hair_0_MetallicAlpha.png_Hair ID Map.png"
+                                        },
+                                        "Hair Flow Map": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/Bun/Bun/Hair_0/Hair_0_MetallicAlpha.png_Hair Flow Map.png"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "TangentVectorColor": [
+                                            255.0,
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "TangentMapFlipGreen": 1.0,
+                                        "AO Map Occlude All Lighting": 0.0,
+                                        "Diffuse Strength": 1.0,
+                                        "Hair Roughness Map Strength": 0.5189999938011169,
+                                        "Hair Specular Map Strength": 0.1979999989271164,
+                                        "Specular Strength": 0.4740000069141388,
+                                        "Secondary Specular Strength": 0.7160000205039978,
+                                        "Transmission Strength": 0.10999999940395355,
+                                        "No Back Face Triangles": 1.0,
+                                        "VertexGrayToColor": [
+                                            0.0,
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "VertexColorStrength": 0.8339999914169312,
+                                        "ActiveChangeHairColor": 0.0,
+                                        "BaseColorMapStrength": 1.0,
+                                        "padding c4z": 0.0,
+                                        "paddingHasMips": 0.0,
+                                        "RootColor": [
+                                            26.0,
+                                            12.0,
+                                            8.0
+                                        ],
+                                        "padding c5w": 0.0,
+                                        "TipColor": [
+                                            48.0,
+                                            26.0,
+                                            17.0
+                                        ],
+                                        "RootTipBlendMode": 0.0,
+                                        "UseRootTipColor": 1.0,
+                                        "RootColorStrength": 1.0,
+                                        "TipColorStrength": 1.0,
+                                        "InvertRootTip": 0.0,
+                                        "_1st Dye Color": [
+                                            182.0,
+                                            125.0,
+                                            79.0
+                                        ],
+                                        "_1st Dye Strength": 0.0,
+                                        "_1st Dye Distribution from Grayscale": [
+                                            25.5,
+                                            51.0,
+                                            76.5
+                                        ],
+                                        "_1st BlendMode": 0.0,
+                                        "Mask 1st Dye by RootMap": 1.0,
+                                        "Invert 1st Dye RootMap Mask": 1.0,
+                                        "_1st Dye add Specular": 0.0,
+                                        "padding c10w": 0.0,
+                                        "_2nd Dye Color": [
+                                            255.0,
+                                            255.0,
+                                            255.0
+                                        ],
+                                        "_2nd Dye Strength": 0.0,
+                                        "_2nd Dye Distribution from Grayscale": [
+                                            25.5,
+                                            51.0,
+                                            76.5
+                                        ],
+                                        "_2nd BlendMode": 0.0,
+                                        "Mask 2nd Dye by RootMap": 0.0,
+                                        "Invert 2nd Dye RootMap Mask": 0.0,
+                                        "_2nd Dye add Specular": 0.0,
+                                        "padding c13w": 0.0,
+                                        "BlackColor Reflection Offset X": 0.0,
+                                        "BlackColor Reflection Offset Y": 0.0,
+                                        "BlackColor Reflection Offset Z": 0.0,
+                                        "padding c14w": 0.0,
+                                        "WhiteColor Reflection Offset X": 0.0,
+                                        "WhiteColor Reflection Offset Y": 0.0,
+                                        "WhiteColor Reflection Offset Z": 0.0,
+                                        "padding c15w": 0.0
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Real_Hair": {
+                        "SubD Level": 0,
+                        "Materials": {
+                            "Hair_1": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    43.0,
+                                    43.0,
+                                    43.0
+                                ],
+                                "Ambient Color": [
+                                    149.99099731445313,
+                                    149.99099731445313,
+                                    149.99099731445313
+                                ],
+                                "Specular Color": [
+                                    229.5,
+                                    229.5,
+                                    229.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Base Color": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Hair_1_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Specular": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./KweeHen_LOD0.fbm/Hair_1_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/Real_Hair/Real_Hair/Hair_1/Hair_1_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/KweeHen_LOD0/Real_Hair/Real_Hair/Hair_1/Hair_1_MetallicAlpha.png"
+                                    }
+                                },
+                                "Resource Textures": {},
+                                "Custom Shader": {
+                                    "Shader Name": "RLHair",
+                                    "Image": {
+                                        "Hair Root Map": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/Real_Hair/Real_Hair/Hair_1/Hair_1_MetallicAlpha.png_Hair Root Map.jpg"
+                                        },
+                                        "Hair ID Map": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/Real_Hair/Real_Hair/Hair_1/Hair_1_MetallicAlpha.png_Hair ID Map.png"
+                                        },
+                                        "Hair Flow Map": {
+                                            "Texture Path": "./textures/KweeHen_LOD0/Real_Hair/Real_Hair/Hair_1/Hair_1_MetallicAlpha.png_Hair Flow Map.png"
+                                        }
+                                    },
+                                    "Variable": {
+                                        "TangentVectorColor": [
+                                            255.0,
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "TangentMapFlipGreen": 1.0,
+                                        "AO Map Occlude All Lighting": 0.0,
+                                        "Diffuse Strength": 1.0,
+                                        "Hair Roughness Map Strength": 0.5239999890327454,
+                                        "Hair Specular Map Strength": 0.23600000143051148,
+                                        "Specular Strength": 0.800000011920929,
+                                        "Secondary Specular Strength": 1.0,
+                                        "Transmission Strength": 0.15000000596046449,
+                                        "No Back Face Triangles": 1.0,
+                                        "VertexGrayToColor": [
+                                            0.0,
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "VertexColorStrength": 0.875,
+                                        "ActiveChangeHairColor": 0.0,
+                                        "BaseColorMapStrength": 1.0,
+                                        "padding c4z": 0.0,
+                                        "paddingHasMips": 0.0,
+                                        "RootColor": [
+                                            37.0,
+                                            18.0,
+                                            11.0
+                                        ],
+                                        "padding c5w": 0.0,
+                                        "TipColor": [
+                                            86.0,
+                                            48.0,
+                                            31.0
+                                        ],
+                                        "RootTipBlendMode": 0.0,
+                                        "UseRootTipColor": 1.0,
+                                        "RootColorStrength": 1.0,
+                                        "TipColorStrength": 1.0,
+                                        "InvertRootTip": 0.0,
+                                        "_1st Dye Color": [
+                                            182.0,
+                                            125.0,
+                                            79.0
+                                        ],
+                                        "_1st Dye Strength": 0.5429999828338623,
+                                        "_1st Dye Distribution from Grayscale": [
+                                            25.5,
+                                            51.0,
+                                            76.5
+                                        ],
+                                        "_1st BlendMode": 0.0,
+                                        "Mask 1st Dye by RootMap": 1.0,
+                                        "Invert 1st Dye RootMap Mask": 1.0,
+                                        "_1st Dye add Specular": 0.0,
+                                        "padding c10w": 0.0,
+                                        "_2nd Dye Color": [
+                                            255.0,
+                                            255.0,
+                                            255.0
+                                        ],
+                                        "_2nd Dye Strength": 0.0,
+                                        "_2nd Dye Distribution from Grayscale": [
+                                            25.5,
+                                            51.0,
+                                            76.5
+                                        ],
+                                        "_2nd BlendMode": 0.0,
+                                        "Mask 2nd Dye by RootMap": 0.0,
+                                        "Invert 2nd Dye RootMap Mask": 0.0,
+                                        "_2nd Dye add Specular": 0.0,
+                                        "padding c13w": 0.0,
+                                        "BlackColor Reflection Offset X": 0.0,
+                                        "BlackColor Reflection Offset Y": 0.0,
+                                        "BlackColor Reflection Offset Z": 0.0,
+                                        "padding c14w": 0.0,
+                                        "WhiteColor Reflection Offset X": 0.0,
+                                        "WhiteColor Reflection Offset Y": 0.0,
+                                        "WhiteColor Reflection Offset Z": 0.0,
+                                        "padding c15w": 0.0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Noodle
+* source:	https://sketchfab.com/3d-models/noodle-4326312c19a74e33bcf00dc1fc5e6928
+* author:	andrianomenjanaharyherysetra (https://sketchfab.com/andrianomenjanaharyherysetra)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Noodle" (https://sketchfab.com/3d-models/noodle-4326312c19a74e33bcf00dc1fc5e6928) by andrianomenjanaharyherysetra (https://sketchfab.com/andrianomenjanaharyherysetra) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
