@@ -11,7 +11,7 @@ public class PlayModeManager : MonoBehaviour
     public ArmSwingLocomotion armSwingScript;
     public Transform player;
     public Vector3 resetPosition = new Vector3(19f, 0f, -66f);
-
+    public GameObject NPCs;
     private bool isRoamingMode = false;
     private bool waitingForAKey = false;
 
@@ -25,6 +25,7 @@ public class PlayModeManager : MonoBehaviour
 
         if (isRoamingMode && OVRInput.GetDown(OVRInput.Button.Two))  
         {
+            NPCs.SetActive(false);
             StartCoroutine(ExitRoamingMode());
         }
     }
