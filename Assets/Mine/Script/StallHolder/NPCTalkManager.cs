@@ -16,6 +16,7 @@ public class NPCTalkManager : MonoBehaviour
     public GameObject promptUI;       // "Press A to talk"
     public GameObject dialogUI;       // Dialog root (enabled when dialog starts)
     public CanvasGroup fadeGroup;     // Fullscreen black overlay with CanvasGroup (alpha 0 on start)
+    public GameObject talkIcon;
 
     [Header("Timings")]
     public float fadeDuration = 0.2f; // Fade-out and fade-in duration
@@ -87,7 +88,8 @@ public class NPCTalkManager : MonoBehaviour
     {
         _busy = true;
         _dialogActive = true;
-
+        talkIcon.SetActive(false);
+        promptUI.SetActive(false);
         // Save original rig pose
         if (xrOrigin != null)
         {
@@ -229,6 +231,7 @@ public class NPCTalkManager : MonoBehaviour
         // Fade out
         yield return FadeTo(1f, fadeDuration);
 
+        talkIcon.SetActive(true);
         // Hide dialog
         if (dialogUI != null) dialogUI.SetActive(false);
 

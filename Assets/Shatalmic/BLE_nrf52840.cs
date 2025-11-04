@@ -1,24 +1,26 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class BLE_nrf52840 : MonoBehaviour
 {
     public string DeviceName = "ledbtn";
     public string ServiceUUID = "A9E90000-194C-4523-A473-5FDF36AA4D20";
     public string CharactristicUUID = "A9E90001-194C-4523-A473-5FDF36AA4D20";
-    //public string ButtonUUID = "A9E90002-194C-4523-A473-5FDF36AA4D20";
+
+    // ????
+    public float HeartbeatInterval = 1.0f;   // ???????ping????
+    public float HeartbeatTimeout = 3.0f;   // ?????????????
 
     enum States
     {
         None,
         Scan,
         ScanRSSI,
-        ReadRSSI,
+        ReadRSSI,      // ???????
         Connect,
-        RequestMTU,
-        Subscribe,
-        Unsubscribe,
-        Disconnect,
+        KeepAlive,
+        Disconnect
     }
 
     private bool _connected = false;
@@ -28,6 +30,10 @@ public class BLE_nrf52840 : MonoBehaviour
     private bool _rssiOnly = false;
     private int _rssi = 0;
 
+    // ????
+    private float _lastHeartbeatTime = 0f;   // ????????????
+    private float _lastSeenTime = 0f;        // ?????????????
+
     public Text StatusText;
     public Text ButtonPositionText;
 
@@ -36,7 +42,8 @@ public class BLE_nrf52840 : MonoBehaviour
         set
         {
             BluetoothLEHardwareInterface.Log(value);
-            StatusText.text = value;
+            if (StatusText != null)
+                StatusText.text = value;
         }
     }
 
@@ -47,6 +54,9 @@ public class BLE_nrf52840 : MonoBehaviour
         _state = States.None;
         _deviceAddress = null;
         _rssi = 0;
+
+        _lastHeartbeatTime = 0f;
+        _lastSeenTime = 0f;
     }
 
     void SetState(States newState, float timeout)
@@ -58,35 +68,26 @@ public class BLE_nrf52840 : MonoBehaviour
     void StartProcess()
     {
         Reset();
-        BluetoothLEHardwareInterface.Initialize(true, false, () =>
+        BluetoothLEHardwareInterface.Initialize(true, false,
+        () =>
         {
-
+            StatusMessage = "[INIT] BLE initialized";
             SetState(States.Scan, 0.1f);
-
-        }, (error) =>
+        },
+        (error) =>
         {
-
-            StatusMessage = "Error during initialize: " + error;
+            StatusMessage = "[INIT][ERR] " + error;
         });
     }
 
-    // Use this for initialization
     void Start()
     {
         StartProcess();
     }
 
-    private void ProcessButton(byte[] bytes)
-    {
-        if (bytes[0] == 0x00)
-            ButtonPositionText.text = "Not Pushed";
-        else
-            ButtonPositionText.text = "Pushed";
-    }
-
-    // Update is called once per frame
     void Update()
     {
+        // ???????
         if (_timeout > 0f)
         {
             _timeout -= Time.deltaTime;
@@ -100,101 +101,119 @@ public class BLE_nrf52840 : MonoBehaviour
                         break;
 
                     case States.Scan:
-                        StatusMessage = "Scanning for " + DeviceName;
+                        StatusMessage = "[SCAN] Scanning for " + DeviceName;
 
-                        BluetoothLEHardwareInterface.ScanForPeripheralsWithServices(null, (address, name) =>
-                        {
-                            // if your device does not advertise the rssi and manufacturer specific data
-                            // then you must use this callback because the next callback only gets called
-                            // if you have manufacturer specific data
-
-                            if (!_rssiOnly)
+                        BluetoothLEHardwareInterface.ScanForPeripheralsWithServices(
+                            null,
+                            (address, name) =>
                             {
-                                if (name.Contains(DeviceName))
+                                if (!string.IsNullOrEmpty(name) && name.Contains(DeviceName))
                                 {
-                                    StatusMessage = "Found " + name;
-
-                                    // found a device with the name we want
-                                    // this example does not deal with finding more than one
+                                    StatusMessage = "[SCAN] Found " + name + " at " + address;
                                     _deviceAddress = address;
-                                    SetState(States.Connect, 0.5f);
+
+                                    BluetoothLEHardwareInterface.StopScan();
+                                    SetState(States.Connect, 0.2f);
                                 }
-                            }
-
-                        }, (address, name, rssi, bytes) =>
-                        {
-
-                            if (name.Contains(DeviceName))
+                            },
+                            (address, name, rssi, bytes) =>
                             {
-                                StatusMessage = "Found " + name;
-
-                                if (_rssiOnly)
+                                if (!string.IsNullOrEmpty(name) && name.Contains(DeviceName))
                                 {
-                                    _rssi = rssi;
-                                }
-                                else
-                                {
+                                    StatusMessage = "[SCAN] Found " + name + " (RSSI mode) at " + address;
                                     _deviceAddress = address;
-                                    SetState(States.Connect, 0.5f);
-                                }
-                            }
 
-                        }, _rssiOnly); 
+                                    BluetoothLEHardwareInterface.StopScan();
+                                    SetState(States.Connect, 0.2f);
+                                }
+                            },
+                            _rssiOnly
+                        );
 
                         if (_rssiOnly)
                             SetState(States.ScanRSSI, 0.5f);
-                        break;
 
-                    case States.ScanRSSI:
-                        break;
-
-                    case States.ReadRSSI:
-                        StatusMessage = $"Call Read RSSI";
-                        BluetoothLEHardwareInterface.ReadRSSI(_deviceAddress, (address, rssi) =>
-                        {
-                            StatusMessage = $"Read RSSI: {rssi}";
-                        });
-
-                        SetState(States.ReadRSSI, 2f);
                         break;
 
                     case States.Connect:
-                        StatusMessage = "Connecting...";
-                        BluetoothLEHardwareInterface.ConnectToPeripheral(_deviceAddress, null, null, (address, serviceUUID, characteristicUUID) =>
+                        if (string.IsNullOrEmpty(_deviceAddress))
                         {
-                            StatusMessage = serviceUUID;//"Connected...";
+                            StatusMessage = "[CONNECT][ERR] no device address, back to scan";
+                            SetState(States.Scan, 0.5f);
+                            break;
+                        }
 
-                            BluetoothLEHardwareInterface.StopScan();
+                        StatusMessage = "[CONNECT] Connecting to " + _deviceAddress;
 
-                            if (IsEqual(serviceUUID, ServiceUUID))
+                        // ????????? (addr, onConnected, onServiceDiscovered, onCharacteristicDiscovered)
+                        BluetoothLEHardwareInterface.ConnectToPeripheral(
+                            _deviceAddress,
+                            // onConnected
+                            (address) =>
                             {
-                                StatusMessage = "Connected!";
+                                StatusMessage = "[CONNECT] Connected to " + address;
+                                _connected = true;
+
+                                // ????????????
+                                _lastSeenTime = Time.time;
+                            },
+                            // onServiceDiscovered
+                            (address, serviceUUID) =>
+                            {
+                                if (IsEqual(serviceUUID, ServiceUUID))
+                                {
+                                    StatusMessage = "[CONNECT] Service OK: " + serviceUUID;
+                                    _connected = true;
+                                    _lastSeenTime = Time.time;
+
+                                    // ?? KeepAlive
+                                    SetState(States.KeepAlive, 0.0f);
+                                }
+                            },
+                            // onCharacteristicDiscovered
+                            (address, serviceUUID, characteristicUUID) =>
+                            {
+                                if (IsEqual(serviceUUID, ServiceUUID) &&
+                                    IsEqual(characteristicUUID, CharactristicUUID))
+                                {
+                                    StatusMessage = "[CONNECT] Char OK: " + characteristicUUID;
+                                    _connected = true;
+                                    _lastSeenTime = Time.time;
+
+                                    SetState(States.KeepAlive, 0.0f);
+                                }
                             }
-                        });
+                        );
+
                         break;
 
-                    case States.RequestMTU:
-                        StatusMessage = "Requesting MTU";
+                    case States.KeepAlive:
+                        // ??? KeepAlive ?????????
+                        HandleKeepAlive();
+                        break;
 
-                        BluetoothLEHardwareInterface.RequestMtu(_deviceAddress, 185, (address, newMTU) =>
-                        {
-                            StatusMessage = "MTU set to " + newMTU.ToString();
+                    case States.ReadRSSI:
+                        // ?????RSSI
+                        DoHeartbeatReadRSSI();
+                        break;
 
-                            SetState(States.Subscribe, 0.1f);
-                        });
+                    case States.ScanRSSI:
+                        // ???????ScanRSSI????????????
                         break;
 
                     case States.Disconnect:
-                        StatusMessage = "Commanded disconnect.";
+                        StatusMessage = "[DISCONNECT] Forcing disconnect";
 
-                        if (_connected)
+                        if (_connected && !string.IsNullOrEmpty(_deviceAddress))
                         {
-                            BluetoothLEHardwareInterface.DisconnectPeripheral(_deviceAddress, (address) =>
+                            string addrCopy = _deviceAddress;
+                            BluetoothLEHardwareInterface.DisconnectPeripheral(addrCopy, (address) =>
                             {
-                                StatusMessage = "Device disconnected";
+                                StatusMessage = "[DISCONNECT] Disconnected " + address;
                                 BluetoothLEHardwareInterface.DeInitialize(() =>
                                 {
                                     _connected = false;
+                                    _deviceAddress = null;
                                     _state = States.None;
                                 });
                             });
@@ -210,84 +229,181 @@ public class BLE_nrf52840 : MonoBehaviour
                 }
             }
         }
+
+        // ? Update ?????????????????????
+        if (_state == States.KeepAlive && _connected)
+        {
+            float now = Time.time;
+            if (now - _lastSeenTime > HeartbeatTimeout)
+            {
+                // ????????????
+                StatusMessage = "[KEEPALIVE][TIMEOUT] Lost device. Rescanning...";
+                ForceDisconnectAndRescan();
+            }
+        }
     }
 
-    private bool ledON = false;
-    public void OnLED()
+    // ----------------------
+    // ???????
+    // ----------------------
+
+    private void HandleKeepAlive()
     {
-        ledON = !ledON;
-        if (ledON)
+        // ??????????????RSSI??
+        if (_connected && !string.IsNullOrEmpty(_deviceAddress))
         {
-            SendByte((byte)0x01);
+            float now = Time.time;
+            if (now - _lastHeartbeatTime >= HeartbeatInterval)
+            {
+                _lastHeartbeatTime = now;
+                StatusMessage = "[KEEPALIVE] Heartbeat -> ReadRSSI";
+                SetState(States.ReadRSSI, 0.0f);
+            }
+            else
+            {
+                // ??????????????KeepAlive
+                SetState(States.KeepAlive, 0.1f);
+            }
         }
         else
         {
-            SendByte((byte)0x00);
+            // ??????? _connected = false
+            StatusMessage = "[KEEPALIVE] Not connected. Back to scan.";
+            ForceDisconnectAndRescan();
         }
     }
 
-    public void Humi_0()
+    private void DoHeartbeatReadRSSI()
     {
-        SendByte((byte)0);
-    }
-    public void Humi_1()
-    {
-        SendByte((byte)1);
-    }
-    public void Humi_2()
-    {
-        SendByte((byte)2);
-    }
-    public void Humi_3()
-    {
-        SendByte((byte)3);
-    }
-    public void Humi_4()
-    {
-        SendByte((byte)4);
-    }
-    public void Humi_5()
-    {
-        SendByte((byte)5);
+        if (!_connected || string.IsNullOrEmpty(_deviceAddress))
+        {
+            StatusMessage = "[HEARTBEAT][ERR] no addr, rescan";
+            ForceDisconnectAndRescan();
+            return;
+        }
+
+        // ????? ReadRSSI
+        // ??????????????????????
+        // ??? try/catch ??? Unity ?????
+        bool callbackCalled = false;
+        try
+        {
+            BluetoothLEHardwareInterface.ReadRSSI(_deviceAddress, (address, rssi) =>
+            {
+                callbackCalled = true;
+                _rssi = rssi;
+                _connected = true;
+                _lastSeenTime = Time.time; // ? ???????
+
+                StatusMessage = "[HEARTBEAT] RSSI " + rssi + " OK";
+
+                // ??KeepAlive???????
+                SetState(States.KeepAlive, HeartbeatInterval * 0.5f);
+            });
+        }
+        catch (Exception e)
+        {
+            StatusMessage = "[HEARTBEAT][EXC] " + e.Message + " -> assume disconnected.";
+            ForceDisconnectAndRescan();
+            return;
+        }
+
+        // ??????????????catch????
+        // ????????????????????????????????????? HeartbeatTimeout ????
+        if (!callbackCalled)
+        {
+            // ???????????? HeartbeatTimeout ??
+            SetState(States.KeepAlive, HeartbeatInterval * 0.5f);
+        }
     }
 
-    string FullUUID(string uuid)
+    private void ForceDisconnectAndRescan()
     {
-        string fullUUID = uuid;
-        if (fullUUID.Length == 4)
-            fullUUID = "0000" + uuid + "-0000-1000-8000-00805f9b34fb";
+        _connected = false;
 
-        return fullUUID;
+        // ??????????????????“???????”?
+        if (!string.IsNullOrEmpty(_deviceAddress))
+        {
+            string addrCopy = _deviceAddress;
+            BluetoothLEHardwareInterface.DisconnectPeripheral(addrCopy, (address) =>
+            {
+                StatusMessage = "[FORCE] DisconnectPeripheral called for " + address;
+            });
+        }
+
+        _deviceAddress = null;
+
+        // ????
+        SetState(States.Scan, 0.5f);
     }
 
-    bool IsEqual(string uuid1, string uuid2)
+    // ----------------------
+    // UI / send data
+    // ----------------------
+
+    private bool ledON = false;
+
+    public void OnLED()
     {
-        return (uuid1.ToUpper().Equals(uuid2.ToUpper()));
+        ledON = !ledON;
+        SendByte(ledON ? (byte)0x01 : (byte)0x00);
     }
 
     void SendByte(byte value)
     {
-        byte[] data = { value };
-        BluetoothLEHardwareInterface.WriteCharacteristic(_deviceAddress, ServiceUUID, CharactristicUUID, data, data.Length, true, (characteristicUUID) =>
+        if (!_connected || string.IsNullOrEmpty(_deviceAddress))
         {
+            StatusMessage = "[SEND][ERR] Not connected, can't send byte.";
+            return;
+        }
 
-            BluetoothLEHardwareInterface.Log("Write Succeeded");
-        });
+        byte[] data = { value };
+
+        BluetoothLEHardwareInterface.WriteCharacteristic(
+            _deviceAddress,
+            ServiceUUID,
+            CharactristicUUID,
+            data,
+            data.Length,
+            true,
+            (characteristicUUID) =>
+            {
+                BluetoothLEHardwareInterface.Log("[SEND] Write Succeeded");
+            });
     }
 
     public void SendBitmask(ushort mask)
     {
+        if (!_connected || string.IsNullOrEmpty(_deviceAddress))
+        {
+            StatusMessage = "[SEND][ERR] Not connected, can't send bitmask.";
+            return;
+        }
+
         byte[] data = new byte[]
         {
-
             (byte)(mask & 0xFF),
             (byte)((mask >> 8) & 0xFF)
         };
 
-        BluetoothLEHardwareInterface.WriteCharacteristic(_deviceAddress, ServiceUUID, CharactristicUUID, data, data.Length, true, (characteristicUUID) =>
-        {
+        BluetoothLEHardwareInterface.WriteCharacteristic(
+            _deviceAddress,
+            ServiceUUID,
+            CharactristicUUID,
+            data,
+            data.Length,
+            true,
+            (characteristicUUID) =>
+            {
+                BluetoothLEHardwareInterface.Log("[SEND] Write Succeeded");
+            });
+    }
 
-            BluetoothLEHardwareInterface.Log("Write Succeeded");
-        });
+    // ----------------------
+    // Helpers
+    // ----------------------
+    bool IsEqual(string uuid1, string uuid2)
+    {
+        return uuid1 != null && uuid2 != null && uuid1.ToUpper().Equals(uuid2.ToUpper());
     }
 }
