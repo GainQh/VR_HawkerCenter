@@ -2,49 +2,70 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 using TMPro;
+using System.Text.RegularExpressions;
 
 public class AIChatManager : MonoBehaviour
 {
     [Header("References")]
-    public TextMeshProUGUI userUtteranceText;   // 从 "User Utterance" 获取的文本
-    public TextMeshProUGUI aiAnswerText;        // 显示 AI 返回结果
-    public TextMeshProUGUI debugText;           // 可选调试信息输出
-    
-    [Header("AI Animation Control")]
+    public TextMeshProUGUI userUtteranceText;   // From "User Utterance"
+    public TextMeshProUGUI aiAnswerText;        // Plain text answer display
+    public TextMeshProUGUI debugText;           // Optional debug
     public AIAnimatorManager animatorManager;
 
     [Header("Server Settings")]
-    public string serverIP = "10.249.157.127";   // 🧠 替换为你自己的 IP
+    public string serverIP = "10.249.157.127";
     public int port = 5006;
+
+    [Header("JSON Parser (Sibling)")]
+    public JsonAIManager jsonManager;           // ← Assign the JsonAIManager on the same GameObject
 
     public void UpdateAIReply(string json)
     {
-        var reply = JsonUtility.FromJson<ReplyData>(json);
-        if (aiAnswerText != null)
-            StartCoroutine(TypeTextEffect(reply.reply));
-        if (debugText != null)
-            debugText.text = "Response has updated";
+        // 1) Try legacy wrapper { "reply": "..." }
+        ReplyData reply = null;
+        try { reply = JsonUtility.FromJson<ReplyData>(json); } catch { }
+
+        string payload = reply != null ? reply.reply : json;
+
+        // 2) If the payload looks like a JSON object, delegate to JsonAIManager
+        if (!string.IsNullOrEmpty(payload) && LooksLikeJsonObject(payload))
+        {
+            if (jsonManager != null)
+            {
+                jsonManager.ProcessIncoming(payload); // parse + UI + menu switching handled there
+                if (debugText) debugText.text = "Delegated to JsonAIManager";
+            }
+            else
+            {
+                Debug.LogWarning("[AIChatManager] JsonAIManager not assigned.");
+                if (aiAnswerText) StartCoroutine(TypeTextEffect(payload));
+            }
+            return;
+        }
+
+        // 3) Otherwise treat as plain text
+        if (aiAnswerText) StartCoroutine(TypeTextEffect(payload ?? ""));
+        if (debugText) debugText.text = "Response shown as plain text";
     }
 
     public void OnSendClicked()
     {
-        string prompt = userUtteranceText != null ? userUtteranceText.text.Trim() : "";
+        string prompt = userUtteranceText ? userUtteranceText.text.Trim() : "";
         if (!string.IsNullOrEmpty(prompt))
         {
             StartCoroutine(SendPrompt(prompt));
         }
         else
         {
-            Debug.LogWarning("⚠️ 用户输入为空，未发送。");
-            if (debugText != null) debugText.text = "Input is empty";
+            Debug.LogWarning("⚠️ Empty user input.");
+            if (debugText) debugText.text = "Input is empty";
         }
     }
 
     IEnumerator SendPrompt(string prompt)
     {
         string url = $"https://{serverIP}:{port}/ask";
-        Debug.Log("🌐 请求：" + url);
-        if (debugText != null) debugText.text = $"Rquirement：{url}";
+        if (debugText) debugText.text = $"POST: {url}";
 
         string json = JsonUtility.ToJson(new PromptData { prompt = prompt });
         byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(json);
@@ -54,25 +75,18 @@ public class AIChatManager : MonoBehaviour
             request.uploadHandler = new UploadHandlerRaw(bodyRaw);
             request.downloadHandler = new DownloadHandlerBuffer();
             request.SetRequestHeader("Content-Type", "application/json");
-
-            // 🔐 跳过证书验证
             request.certificateHandler = new AcceptAllCertificates();
 
             yield return request.SendWebRequest();
 
             if (request.result == UnityWebRequest.Result.Success)
             {
-                var reply = JsonUtility.FromJson<ReplyData>(request.downloadHandler.text);
-                if (aiAnswerText != null)
-                    StartCoroutine(TypeTextEffect(reply.reply));
-                if (debugText != null)
-                    debugText.text = "Rely successfully";
+                UpdateAIReply(request.downloadHandler.text);
             }
             else
             {
-                Debug.LogError("❌ 网络请求失败：" + request.error);
-                if (debugText != null)
-                    debugText.text = "Error" + request.error;
+                Debug.LogError("❌ HTTP error: " + request.error);
+                if (debugText) debugText.text = "Error " + request.error;
             }
         }
     }
@@ -80,67 +94,46 @@ public class AIChatManager : MonoBehaviour
     IEnumerator GetLatestReply()
     {
         string url = $"https://{serverIP}:{port}/latest";
-        Debug.Log("🔄 获取历史回复：" + url);
-
         using (UnityWebRequest request = UnityWebRequest.Get(url))
         {
-            // 🔐 跳过证书验证
             request.certificateHandler = new AcceptAllCertificates();
-
             yield return request.SendWebRequest();
 
             if (request.result == UnityWebRequest.Result.Success)
             {
-                var reply = JsonUtility.FromJson<ReplyData>(request.downloadHandler.text);
-                if (aiAnswerText != null)
-                    aiAnswerText.text = reply.reply;
-                if (debugText != null)
-                    debugText.text = "Initial reply loads successfully";
+                UpdateAIReply(request.downloadHandler.text);
+                if (debugText) debugText.text = "Loaded initial reply";
             }
             else
             {
-                Debug.LogWarning("⚠️ 无法加载历史回复：" + request.error);
-                if (debugText != null)
-                    debugText.text = "Loading is fail：" + request.error;
+                if (debugText) debugText.text = "Load fail: " + request.error;
             }
         }
     }
 
-    [System.Serializable]
-    public class PromptData
+    // ---------- helpers ----------
+    private bool LooksLikeJsonObject(string s)
     {
-        public string prompt;
+        if (string.IsNullOrEmpty(s)) return false;
+        var m = Regex.Match(s, @"\{[\s\S]*\}");
+        return m.Success;
     }
 
-    [System.Serializable]
-    public class ReplyData
-    {
-        public string reply;
-    }
+    [System.Serializable] public class PromptData { public string prompt; }
+    [System.Serializable] public class ReplyData { public string reply; }
 
-    // 🔐 自签名 HTTPS 跳过证书校验器（仅用于开发）
-    private class AcceptAllCertificates : CertificateHandler
-    {
-        protected override bool ValidateCertificate(byte[] certificateData)
-        {
-            return true;
-        }
-    }
+    // Dev-only: accept self-signed
+    private class AcceptAllCertificates : CertificateHandler { protected override bool ValidateCertificate(byte[] d) => true; }
 
     IEnumerator TypeTextEffect(string text)
     {
-        if (animatorManager != null)
-            animatorManager.PlayTalkingAnimation();
-
-        aiAnswerText.text = "";
+        if (animatorManager) animatorManager.PlayTalkingAnimation();
+        if (aiAnswerText) aiAnswerText.text = "";
         foreach (char c in text)
         {
-            aiAnswerText.text += c;
-            yield return new WaitForSeconds(0.03f); // 打字速度，可调整
+            if (aiAnswerText) aiAnswerText.text += c;
+            yield return new WaitForSeconds(0.03f);
         }
-
-        if (animatorManager != null)
-            animatorManager.PlayIdle();
+        if (animatorManager) animatorManager.PlayIdle();
     }
-
 }
