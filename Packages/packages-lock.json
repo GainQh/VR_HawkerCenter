@@ -47,7 +47,7 @@
       "url": "https://packages.unity.com"
     },
     "com.soupday.cc3_unity_tools": {
-      "version": "file:C:/Gan Quanhao/cc_unity_tools_URP-main",
+      "version": "file:C:/VR_HawkerCenter_ResearchProject/cc_unity_tools_URP-main",
       "depth": 0,
       "source": "local",
       "dependencies": {
